@@ -48,6 +48,20 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '100px',
+            duration: 2000,
+            delay: 200,
+        });
+
+        ScrollReveal().reveal('.home .content h2', {origin: 'top'});
+        ScrollReveal().reveal('.wrapper-login h2', {origin: 'right'});
+        ScrollReveal().reveal('.home .content a, .input-box, .remember-forgot, .wrapper-login .btn, .register-link', {origin: 'bottom'});
+        ScrollReveal().reveal('.home .content', {origin: 'left'});
+    </script>
 </body>
 
 </html>

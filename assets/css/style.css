@@ -150,7 +150,6 @@ header {
 }
 .trangchu p {
     margin-top: 1rem;
-    opacity: 0;
 }
 .trangchu__lienhe a {
     display: inline-flex;
@@ -165,7 +164,6 @@ header {
     color: var(--main-color);
     margin: 2rem 1.5rem 2.5rem 0;
     transition: all 0.5s ease;
-    opacity: 0;
 }
 .trangchu__lienhe a:hover {
     background-color: var(--main-color);

@@ -68,64 +68,16 @@ ScrollReveal().reveal('.trangchu__img img', {
     reset: true // Reset lại hiệu ứng khi cuộn lại trang
 });
 
-const paragraphs = document.querySelectorAll('p');
-const links = document.querySelectorAll('.trangchu__lienhe a');
-
-// Hiển thị hai thẻ <p> trước
-paragraphs.forEach((paragraph, index) => {
-    setTimeout(() => {
-        paragraph.style.opacity = '1'; // Hiển thị thẻ <p>
-    }, 300 * index); // Mỗi thẻ hiển thị sau 300ms (có thể điều chỉnh thời gian theo ý muốn)
-});
-
-// Hiển thị từ dưới lên và lần lượt từng thẻ <a>
-links.forEach((link, index) => {
-    setTimeout(() => {
-        link.style.opacity = '1'; // Hiển thị thẻ <a>
-        link.classList.add('animate__animated', 'animate__fadeInUp'); // Thêm hiệu ứng fadeInUp từ Animate.css
-    }, 300 * (paragraphs.length + index)); // Mỗi thẻ hiển thị sau khi các thẻ <p> đã hiển thị xong
-});
-
 ScrollReveal({
     reset: true,
     distance: '100px',
     duration: 2000,
     delay: 200,
 })
-ScrollReveal().reveal('.trangchu__noidung h2', {origin: 'top'})
-ScrollReveal().reveal('', {origin: 'right'})
-ScrollReveal().reveal('.trangchu__noidung p, trangchu__lienhe a, .cars-container .box', {origin: 'bottom'})
-ScrollReveal().reveal('.trangchu__noidung', {origin: 'left'})
-
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     const swiper = new Swiper('.bike_company', {
-//       direction: 'horizontal',
-//       loop: true,
-//       autoplay: {
-//         delay: 2000,
-//         disableOnInteraction: false,
-//       },
-//       slidesPerView: 6, // Số lượng slide hiển thị mỗi lần
-//       on: {
-//         init: function () {
-//           // Hiển thị slide đầu tiên khi khởi tạo
-//           const activeSlides = this.slides.slice(0, this.params.slidesPerView);
-//           activeSlides.forEach(slide => {
-//             slide.style.display = 'block';
-//           });
-//         },
-//         slideChange: function () {
-//           // Hiển thị các slide tiếp theo khi chuyển đổi
-//           const activeSlides = this.slides.slice(this.activeIndex, this.activeIndex + this.params.slidesPerView);
-//           activeSlides.forEach(slide => {
-//             slide.style.display = 'block';
-//           });
-//         },
-//       },
-//     });
-//   });
+ScrollReveal().reveal('.trangchu__noidung h2, .headingSPAN', {origin: 'top'})
+ScrollReveal().reveal('.xemoi label', {origin: 'right'})
+ScrollReveal().reveal('.trangchu__noidung p, .box, .post-box, .home-title, .home-text1 span, .hangtrinhbay h2, .hangtrinhbayP, .hangtrinhbay__dongsanpham-sp, .heading p, .review-container', {origin: 'bottom'})
+ScrollReveal().reveal('.trangchu__noidung, .xemoi h2, .heading h2', {origin: 'left'})
 
 
 var swiper = new Swiper('.slideshow__xemoi', {
