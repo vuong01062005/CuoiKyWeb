@@ -70,13 +70,13 @@ ScrollReveal().reveal('.trangchu__img img', {
 
 ScrollReveal({
     reset: true,
-    distance: '100px',
+    distance: '80px',
     duration: 2000,
     delay: 200,
 })
 ScrollReveal().reveal('.trangchu__noidung h2, .headingSPAN', {origin: 'top'})
 ScrollReveal().reveal('.xemoi label', {origin: 'right'})
-ScrollReveal().reveal('.trangchu__noidung p, .box, .post-box, .home-title, .home-text1 span, .hangtrinhbay h2, .hangtrinhbayP, .hangtrinhbay__dongsanpham-sp, .heading p, .review-container', {origin: 'bottom'})
+ScrollReveal().reveal('.trangchu__noidung p, .box, .home-title, .home-text1 span, .hangtrinhbay h2, .hangtrinhbayP, .hangtrinhbay__dongsanpham-sp, .heading p, .review-container', {origin: 'bottom'})
 ScrollReveal().reveal('.trangchu__noidung, .xemoi h2, .heading h2', {origin: 'left'})
 
 

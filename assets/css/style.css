@@ -52,6 +52,9 @@ header {
 .header__nav a {
     color: #fff;
 }
+.header__nav a:hover {
+    color: var(--main-color);
+}
 .fa-solid {
     color: var(--text-color);
 }
@@ -68,6 +71,12 @@ header {
 .header__nav-muaxe-title {
     display: flex;
     align-items: center;
+}
+.header__nav-danhMuc-title:hover p,
+.header__nav-danhMuc-title:hover i,
+.header__nav-muaxe-title:hover p,
+.header__nav-muaxe-title:hover i {
+    color: var(--main-color);
 }
 .header__nav-danhMuc-title i,
 .header__nav-muaxe-title i {
@@ -120,6 +129,12 @@ header {
     transition: width 0.5s ease-in-out;
     color: #fff;
     background-color: #000;
+}
+.fa-cart-shopping:hover {
+    color: var(--main-color);
+}
+.header__nav-search:hover i {
+    color: var(--main-color);
 }
 #header__nav-searchInput::placeholder {
     color: #fff;
@@ -259,7 +274,7 @@ header {
 
 
 .hangtrinhbay {
-    background-color: #dbe1e3;
+    background-color: var(--bg-color);
     color: #333;
     padding: 20px;
     border-radius: 5px;
@@ -268,8 +283,11 @@ header {
 
 .hangtrinhbay h2 {
     font-size: 28px;
-    color: #4f4747;
+    color: var(--text-color);
     margin-bottom: 1.2rem;
+}
+.hangtrinhbayP {
+    color: var(--text-color);
 }
 
 .hangtrinhbay__dongsanpham {
